@@ -47,17 +47,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="<?= base_url('pagina/login'); ?>">Ingresar</a>
                     </li>
-                   
-                    <?php 
-                     $session = session();
+
+                    <?php
+                    $session = session();
                     if ($session->get('logged_in') != null): ?>
                         <li class="nav-item">
                             <a href="<?= base_url('pagina/verCarrito') ?>" class="nav-link"> Ver Carrito</a>
                         </li>
                     <?php endif ?>
 
-                    <?php 
-                     $session = session();
+                    <?php
+                    $session = session();
                     if ($session->get('logged_in') != null): ?>
                         <li class="nav-item">
                             <a href="<?= base_url('pagina/salir') ?>" class="nav-link"> Salir <?= $session->get('nombre') ?> </a>

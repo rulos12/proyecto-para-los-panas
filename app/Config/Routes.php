@@ -22,3 +22,5 @@ $routes->post('pagina/insertCarrito', 'Producto::insertCarrito');
 
 
 
+$routes->get('pagina/pagar', 'Producto::pagar');
+$routes->post('pagina/pagar', 'Producto::pagar');
